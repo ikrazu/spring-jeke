@@ -7,8 +7,9 @@ public class SessionListener implements HttpSessionListener {
 
 	@Override
 	public void sessionCreated(HttpSessionEvent se) {
-		System.out.println("SESIOA SORTU DA 10 segundoko inaktibitatearekin");
-		se.getSession().setMaxInactiveInterval(10);
+		final int inactiveTimeoutSession = 10 * 60; // 10 minutu
+		System.out.println("SESIOA SORTU DA " + inactiveTimeoutSession + " segundoko inaktibitatearekin");
+		se.getSession().setMaxInactiveInterval(inactiveTimeoutSession);
 	}
 
 	@Override
