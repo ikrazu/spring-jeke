@@ -107,6 +107,19 @@
 			<version>4.2.3.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- DB -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>6.0.5</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
