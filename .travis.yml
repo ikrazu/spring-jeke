@@ -1,2 +1,4 @@
 language: java
-script: mvn package
+script:
+	- jdk_switcher use oraclejdk8
+	- mvn package
